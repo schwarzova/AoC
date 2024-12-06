@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = process.cwd();
-const data = fs.readFileSync(path + '/inputs/03.txt', 'utf8');
+const data = fs.readFileSync(path + '/2024/inputs/03.txt', 'utf8');
 
 const mulRegex = /mul\(\d+,\d+\)/g;
 const arrayOfMuls = [...data.matchAll(mulRegex)];

@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = process.cwd();
-const data = fs.readFileSync(path + '/inputs/04.txt', 'utf8');
+const data = fs.readFileSync(path + '/2024/inputs/04.txt', 'utf8');
 
 let matrix = [];
 

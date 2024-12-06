@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = process.cwd();
-const rules = fs.readFileSync(path + '/inputs/05_rules.txt', 'utf8');
-const pages = fs.readFileSync(path + '/inputs/05_pages.txt', 'utf8');
+const rules = fs.readFileSync(path + '/2024/inputs/05_rules.txt', 'utf8');
+const pages = fs.readFileSync(path + '/2024/inputs/05_pages.txt', 'utf8');
 
 const ruleRows = rules.split('\n').map((l) => l.split('|').map(Number));
 const pageRows = pages.split('\n').map((l) => l.split(',').map(Number));
