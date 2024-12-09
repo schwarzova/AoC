@@ -2,6 +2,8 @@ const fs = require('fs');
 const path = process.cwd();
 const data = fs.readFileSync(path + '/2024/inputs/06.txt', 'utf8');
 
+const { deepCopy } = require('../../helpers/array');
+
 let matrixMap = [];
 
 let guardPos = {
@@ -27,10 +29,6 @@ const originalGuardPos = {
   row: guardPos.row,
   direction: guardPos.direction,
 };
-
-function deepCopy(inputArray) {
-  return JSON.parse(JSON.stringify(inputArray));
-}
 
 function turnRight(direction) {
   if (direction === 'up') {
